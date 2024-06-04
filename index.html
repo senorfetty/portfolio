@@ -393,61 +393,83 @@
       <script src="js/jquery-2.1.1.js"></script>
       <script src="js/swiper.jquery.min.js"></script>
       <!-- Initialize Client Swiper -->
-      <script>
-      var swiper1 = new Swiper('.client-swiper', {
-        slidesPerView: 3,
+      <!-- <script>
+      var swiper1 = new Swiper('.testimonial-swiper', {
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         spaceBetween: 60,
-        // Responsive breakpoints
+    
         breakpoints: {
-          // when window width is <= 320px
+ 
           320: {
             slidesPerView: 1,
             spaceBetween: 10,
             pagination: '.swiper-pagination'
           },
-          // when window width is <= 480px
+    
           480: {
             slidesPerView: 1,
             spaceBetween: 20
           },
-          // when window width is <= 640px
+          
           640: {
             slidesPerView: 1,
             spaceBetween: 30
           }
         }
-      });
-      // Initialize Testimonial Swiper
+      }); -->
 
-   /**   var swiper2 = new Swiper('.testimonial-swiper', {
-        slidesPerView: 3,
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        spaceBetween: 30,
-        grabCursor: true,
-        freeMode: true,
-        breakpoints: {
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     
+      <script>
+        var swiper2 = new Swiper('.testimonial-swiper', {
+          pagination: '.swiper-pagination',
+          paginationClickable: true,
+          spaceBetween: 30,
+          grabCursor: true,
+          freeMode: true,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          autoplay: {
+            delay : 5000,       
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
 
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 10,
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+
+            800: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+
+            1060: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
           },
-         
-          480: {
-            slidesPerView: 1,
-            spaceBetween: 10
-          },
-          
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 10
+          navigation : {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+
           }
-        }
-      });
-       **/
+        });
+       
       </script>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
       <script src="js/jquery.counterup.min.js"></script>
@@ -477,22 +499,24 @@
       </script>
 
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <script>
+      <!-- <script>
           var swiper = new Swiper('.testimonial-swiper', {
-              loop: true,
-              autoplay: {
-                  delay: 5000, // Time between slides in milliseconds
-                  disableOnInteraction: false, // Keep autoplay active even after user interactions
-              },
-              pagination: {
-                  el: '.swiper-pagination',
-                  clickable: true,
-              },
-              navigation: {
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
-              },
+           
+            paginationClickable: true,
+            loop: true,
+            autoplay: {
+                delay: 5000, // Time between slides in milliseconds
+                disableOnInteraction: false, // Keep autoplay active even after user interactions
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
           });
-      </script>
+      </script> -->
     </body>
     </html>

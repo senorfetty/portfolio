@@ -580,3 +580,26 @@ i {
   padding-top: 50px;
   padding-bottom: 50px; 
 }
+
+.swiper-pagination {
+  bottom: 10px; /* Adjust as needed */
+  text-align: center;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #007bff; /* Change to desired color */
+  opacity: 1; /* Full opacity */
+}
+
+.swiper-pagination-bullet-active {
+  background: #0056b3; /* Change to desired active color */
+}
+
+.swiper-container {
+  position: relative;
+}
+
+
