@@ -9,6 +9,7 @@
   color: #222;
   font-weight: normal;
   letter-spacing: 0.03em;
+  overflow-x: hidden;
 }
 a {
   color: #7447ae;
@@ -46,6 +47,10 @@ img {
 
 
 /* Hero Section */
+.hero {
+  overflow: hidden;
+}
+
 header.hero {
   background: url(../assets/code-bg2.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
