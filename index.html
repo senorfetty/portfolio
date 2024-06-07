@@ -483,6 +483,18 @@
       })
       </script>
 
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const menuToggle = document.getElementById('menu-toggle');
+          const mainNav = document.querySelector('ul.main-nav');
+      
+          menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('open');
+            mainNav.classList.toggle('show-it');
+          });
+        });
+      </script>
+      
       <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
       <script>
