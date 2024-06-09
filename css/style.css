@@ -9,8 +9,8 @@
   color: #222;
   font-weight: normal;
   letter-spacing: 0.03em;
-  overflow-x: hidden;
 }
+
 a {
   color: #7447ae;
   -webkit-transition: all 0.2s;
@@ -95,23 +95,59 @@ header.hero .btn {
   margin: 3em 0;
 }
 
+
+ul.social-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 ul.social-links li {
   display: inline-block;
 }
+
 ul.social-links li a {
   padding: 5px;
   opacity: 0.6;
 }
+
 ul.social-links li.label {
   font-size: 20px;
   opacity: 0.6;
   font-weight: 400;
+  margin-right: 10px; /* Ensure space between label and icons */
 }
+
 ul.social-links li a:hover {
   opacity: 1;
 }
+
 ul.social-links li a img {
   max-height: 30px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 18px;
+}
+
+@media (min-width: 601px) {
+  .container2 {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .btn3 {
+      margin-left: auto;
+      float: right;
+
+  }
 }
 
 
@@ -203,8 +239,8 @@ h1.heading.pink:after {
   z-index: 2;
 }
 .swiper-button-next, .swiper-button-prev {
-  width: 80px;
-  height: 80px;
+  width: 20px;
+  height: 20px;
   background-size: 80px 80px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
   border-radius: 5em;
@@ -213,13 +249,7 @@ h1.heading.pink:after {
   transition: all 0.2s;
 }
 
-.swiper-button-next {
-  margin-right: 3%;
-}
 
-.swiper-button-prev {
-  margin-left: 3%;
-}
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
@@ -553,7 +583,6 @@ i {
 }
 
 .col-xl-8 h3 {
-  font-size: 2em;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
 
@@ -613,16 +642,18 @@ i {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  background-color: #00b312c1;
+  background-color: purple;
   color: #ffffff;
   border: none;
   border-radius: 50px;
   text-decoration: none;
   transition: all 0.3s ease, transform 0.2s ease-in-out;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(144, 132, 132, 0.1);
   position: relative;
   overflow: hidden;
+  margin-left: auto; /* Aligns the button to the right */
+  max-width: 100%;
   animation: bounce 1s infinite;
 }
 
@@ -683,7 +714,7 @@ i {
 }
 
 .btn3:hover {
-  background-color: #0056b3;
+  background-color: #1780f1;
   color: #000000;
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgb(0, 0, 0);
@@ -717,10 +748,7 @@ i {
   overflow: hidden;
 }
 
-.container2 {
-  display: flex;
-  gap: 19px;
-}
+
 
 .skills {
   background-color: #000000;
@@ -970,4 +998,11 @@ form.reveal-content {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.social-link {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  
 }
